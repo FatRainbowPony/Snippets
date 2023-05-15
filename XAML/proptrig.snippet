@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>proptrig</Title>
+      <Description>Фрагмент кода для создания триггера свойств</Description>
+      <Author>semfady</Author>
+      <Shortcut>proptrig</Shortcut>
+    </Header>
+    <Snippet>
+	 <Declarations>
+        <Literal>
+          <ID>namePropTrig</ID>
+          <ToolTip>Имя свойства триггера</ToolTip>
+          <Default>NamePropertyTrigger</Default>
+        </Literal>
+		<Literal>
+          <ID>valuePropTrig</ID>
+          <ToolTip>Значение свойства триггера</ToolTip>
+          <Default>ValueTriggerProperty</Default>
+        </Literal>
+		<Literal>
+          <ID>namePropSet</ID>
+          <ToolTip>Имя свойства сеттера</ToolTip>
+          <Default>NamePropertySetter</Default>
+        </Literal>
+		<Literal>
+          <ID>valuePropSet</ID>
+          <ToolTip>Значение свойства сеттера</ToolTip>
+          <Default>ValuePropertySetter</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="xaml">
+        <![CDATA[
+			<Trigger Property="$namePropTrig$" Value="$valuePropTrig$">
+                <Setter Property="$namePropSet$" Value="$valuePropSet$"/>
+            </Trigger>
+		$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

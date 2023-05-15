@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>tmfull</Title>
+      <Description>Фрагмент кода для создания полного таймера</Description>
+      <Author>semfady</Author>
+      <Shortcut>tmfull</Shortcut>
+    </Header>
+    <Snippet>
+		<Imports>
+			<Import>
+				<Namespace>System</Namespace>
+			</Import>
+			<Import>
+				<Namespace>System.Windows.Threading</Namespace>
+			</Import>
+		</Imports>
+      <Code Language="csharp">
+        <![CDATA[
+			private void TimerStart(int timerInterval)
+			{
+				var timer = new DispatcherTimer{ Interval = TimeSpan.FromSeconds(timerInterval) };
+				timer.Tick += TimerTick;
+				timer.Start();
+			}
+
+			private void TimerTick(object sender, EventArgs e)
+			{
+				var timer = (DispatcherTimer)sender;
+				//Your code
+			}
+		$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

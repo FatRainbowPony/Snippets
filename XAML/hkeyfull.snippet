@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>hkeyfull</Title>
+      <Description>Фрагмент кода для создания полного KeyBinding</Description>
+      <Author>semfady</Author>
+      <Shortcut>hkeyfull</Shortcut>
+    </Header>
+    <Snippet>
+	<Declarations>
+        <Literal>
+          <ID>nameComm</ID>
+          <ToolTip>Имя команды</ToolTip>
+          <Default>NameComm</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="xaml">
+        <![CDATA[
+			<Window.InputBindings>
+				<KeyBinding Command="{Binding $nameComm$}" Key="Enter"/>
+			</Window.InputBindings>
+		$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

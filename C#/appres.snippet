@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>appres</Title>
+      <Description>Фрагмент кода для получения ресурса приложения</Description>
+      <Author>semfady</Author>
+      <Shortcut>appres</Shortcut>
+    </Header>
+    <Snippet>
+		<Declarations>
+        <Literal>
+          <ID>nameResource</ID>
+          <ToolTip>Имя ресурса</ToolTip>
+          <Default>NameRecource</Default>
+        </Literal>
+      </Declarations>
+		<Imports>
+			<Import>
+				<Namespace>System</Namespace>
+			</Import>
+			<Import>
+				<Namespace>System.Windows</Namespace>
+			</Import>
+		</Imports>
+      <Code Language="csharp">
+        <![CDATA[
+			Application.Current.Resources["$nameResource$"]
+		$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

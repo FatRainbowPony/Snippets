@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sfd</Title>
+      <Description>Фрагмент кода для создания SaveFileDialog</Description>
+      <Author>semfady</Author>
+      <Shortcut>sfd</Shortcut>
+    </Header>
+    <Snippet>
+		<Imports>
+			<Import>
+				<Namespace>Microsoft.Win32</Namespace>
+			</Import>
+		</Imports>
+      <Code Language="csharp">
+        <![CDATA[
+			var sfd = new SaveFileDialog
+            {
+                Title = "Save file",
+                FileName = "File 1",
+                Filter = "Текстовый документ (*.txt)|*.txt",
+                DefaultExt = "txt"
+            };
+
+            var resultDialog = sfd.ShowDialog();
+            if (resultDialog == true)
+            {
+				//Your code
+            }
+		$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

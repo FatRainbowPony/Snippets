@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>eventtrig</Title>
+      <Description>Фрагмент кода для создания триггера событий</Description>
+      <Author>semfady</Author>
+      <Shortcut>eventtrig</Shortcut>
+    </Header>
+    <Snippet>
+	<Declarations>
+	<Literal>
+		<ID>nameEvent</ID>
+		<ToolTip>Имя события триггера</ToolTip>
+		<Default>NameEvent</Default>
+    </Literal>
+      </Declarations>
+      <Code Language="xaml">
+        <![CDATA[
+			<EventTrigger RoutedEvent="$nameEvent$">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+							<!-- Your code -->
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+		$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

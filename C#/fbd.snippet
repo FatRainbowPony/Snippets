@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>fbd</Title>
+      <Description>Фрагмент кода для создания FolderBrowserDialog</Description>
+      <Author>semfady</Author>
+      <Shortcut>fbd</Shortcut>
+    </Header>
+    <Snippet>
+		<Imports>
+			<Import>
+				<Namespace>Ookii.Dialogs.Wpf</Namespace>
+			</Import>
+		</Imports>
+      <Code Language="csharp">
+        <![CDATA[
+			 var fbd = new VistaFolderBrowserDialog
+            {
+                UseDescriptionForTitle = true,
+                Description = "Select folder"
+            };
+
+            var resultDialog = fbd.ShowDialog();
+			if (resultDialog == true)
+			{
+				//Your code
+			}
+		$end$]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
