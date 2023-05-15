@@ -21,7 +21,7 @@
 			private void TimerStart(int timerInterval)
 			{
 				var timer = new DispatcherTimer{ Interval = TimeSpan.FromSeconds(timerInterval) };
-				timer.Tick += () => 
+				timer.Tick += (sender, e) => 
 				{
 					//Your code
 				};
